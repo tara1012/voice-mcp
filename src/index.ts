@@ -365,7 +365,7 @@ async function generateAudio(env: Env, text: string): Promise<{ success: boolean
         voice_setting: {
           voice_id: env.VOICE_ID,
           speed: 0.89,
-          vol: 1.04,
+          vol: 1.5,
           pitch: 0,
         },
         audio_setting: {
