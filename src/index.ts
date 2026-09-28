@@ -456,6 +456,11 @@ function createVoiceServer(env: Env): McpServer {
         return {
           content: [
             { type: "text" as const, text: `🎙️ ${botName} says: "${text}"` },
+                        {
+              type: "audio" as const,
+              data: result.audio_base64,
+              mimeType: "audio/mpeg",
+            },
           ],
           structuredContent: {
             text: text,
