@@ -359,13 +359,13 @@ async function generateAudio(env: Env, text: string): Promise<{ success: boolean
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'speech-2.8-hd',
+        model: 'speech-2.8-turbo',
         text: text,
         stream: false,
         voice_setting: {
           voice_id: env.VOICE_ID,
-          speed: 1.0,
-          vol: 1.0,
+          speed: 0.89,
+          vol: 1.04,
           pitch: 0,
         },
         audio_setting: {
